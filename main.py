@@ -1,6 +1,5 @@
 # ДЗ: Наследование, Полиморфизм, Инкапсуляция
 from abc import ABC, abstractmethod
-from logging import CRITICAL
 from math import pi
 
 
@@ -25,13 +24,14 @@ class Circle(Shape):
     def area(self):
         return self.radius ** 2 * pi
 
-def main():
 
+def main():
     my_rectangle = Rectangle(15, 13)
     my_circle = Circle(15)
 
     print(f"Rectangle area: {my_rectangle.area()}")
     print(f"Circle area: {my_circle.area():0.2f}")
+
 
 if __name__ == '__main__':
     main()
